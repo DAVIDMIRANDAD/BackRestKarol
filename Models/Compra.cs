@@ -11,6 +11,6 @@ namespace RestauranteKarol.Models
         public string TipoCompra { get; set; } = null!;
         public int IdProveedor { get; set; }
 
-        public virtual Proveedor IdProveedorNavigation { get; set; } = null!;
+        //public virtual Proveedor IdProveedorNavigation { get; set; } = null!;
     }
 }
