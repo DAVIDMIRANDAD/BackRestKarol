@@ -7,7 +7,7 @@ namespace RestauranteKarol.Models
     {
         public Pedido()
         {
-            Facturas = new HashSet<Factura>();
+           
         }
 
         public int IdPedido { get; set; }
@@ -18,7 +18,6 @@ namespace RestauranteKarol.Models
         public int ValorEntrega { get; set; }
         public int IdPersona { get; set; }
 
-        public virtual Persona IdPersonaNavigation { get; set; } = null!;
-        public virtual ICollection<Factura> Facturas { get; set; }
+    
     }
 }

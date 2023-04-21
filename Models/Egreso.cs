@@ -11,6 +11,6 @@ namespace RestauranteKarol.Models
         public DateTime FechaPago { get; set; }
         public int IdProveedor { get; set; }
 
-        public virtual Proveedor IdProveedorNavigation { get; set; } = null!;
+        
     }
 }

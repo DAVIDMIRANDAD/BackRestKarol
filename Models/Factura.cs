@@ -7,7 +7,7 @@ namespace RestauranteKarol.Models
     {
         public Factura()
         {
-            PlatilloXfacturas = new HashSet<PlatilloXfactura>();
+           
         }
 
         public int IdFactura { get; set; }
@@ -19,7 +19,6 @@ namespace RestauranteKarol.Models
         public string EstadoFactura { get; set; } = null!;
         public int IdPedido { get; set; }
 
-        public virtual Pedido IdPedidoNavigation { get; set; } = null!;
-        public virtual ICollection<PlatilloXfactura> PlatilloXfacturas { get; set; }
+      
     }
 }

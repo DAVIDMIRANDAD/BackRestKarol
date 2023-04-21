@@ -112,11 +112,7 @@ namespace RestauranteKarol.Models
 
                 entity.Property(e => e.IdPedido).HasColumnName("idPedido");
 
-                entity.HasOne(d => d.IdPedidoNavigation)
-                    .WithMany(p => p.Facturas)
-                    .HasForeignKey(d => d.IdPedido)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Factura__idPedid__6C190EBB");
+               
             });
 
             modelBuilder.Entity<Inventario>(entity =>
@@ -252,11 +248,6 @@ namespace RestauranteKarol.Models
 
                 entity.Property(e => e.IdPlatillo).HasColumnName("idPlatillo");
 
-                entity.HasOne(d => d.IdFacturaNavigation)
-                    .WithMany(p => p.PlatilloXfacturas)
-                    .HasForeignKey(d => d.IdFactura)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__PlatilloX__idFac__6B24EA82");
 
             });
 

@@ -10,6 +10,6 @@ namespace RestauranteKarol.Models
         public int Existencias { get; set; }
         public int IdProducto { get; set; }
 
-        public virtual Producto IdProductoNavigation { get; set; } = null!;
+
     }
 }

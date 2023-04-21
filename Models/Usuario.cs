@@ -12,6 +12,6 @@ namespace RestauranteKarol.Models
         public string EstadoUsu { get; set; } = null!;
         public int IdPersona { get; set; }
 
-        public virtual Persona IdPersonaNavigation { get; set; } = null!;
+      
     }
 }
